@@ -67,7 +67,7 @@ class Converter
     /**
      * @return \PDO
      */
-    private function pdo()
+    public function pdo()
     {
         if(!isset($this->pdo)) {
             $this->pdo = new \PDO(
